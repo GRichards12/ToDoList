@@ -1,38 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@font-face {
+  font-family: openDyslexic;
+  src: url(../public/OpenDyslexic-Regular.otf);
+}
+
 .App {
   text-align: center;
+  
+  color: rgb(56, 56, 56);
+  padding:0;
+  margin:0;
+ }
+.normal--theme header{
+  background-color: rgba(84, 104, 253, 0.45);
+}
+.darker--theme header{
+  background-color: rgb(252, 172, 80);
+} 
+.normal--theme .items{
+  font-weight: bold;
+  background-color: rgba(180, 255, 127, 0.63);
+  border-bottom-width:0.5pc;
+  border-bottom-color: green;
+  border-bottom-style: solid;
+  border-top-width:0.5pc;
+  border-top-color: rgb(158, 255, 158);
+  border-top-style: solid;
+ }
+.darker--theme .items{
+  font-weight: bold;
+  background-color: rgb(252, 61, 61);
+  border-bottom-width:0.5pc;
+  border-bottom-color: rgb(134, 0, 0);
+  border-bottom-style: solid;
+  border-top-width:0.5pc;
+  border-top-color: rgb(255, 158, 158);
+  border-top-style: solid;
+}
+.dyslexic--font{
+font-family:openDyslexic;
+}
+.normal--font{
+font-family: 'Noto Sans', sans-serif;
+}
+input{
+  border-radius: 0.5pc;
+  margin-bottom: 2pc;
+  border-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ button{
+   border-radius: 0.5pc;
+   border-color: rgba(147, 147, 147, 0.762);
+   border-width: 0.05pc;
+   margin-left: 1pc;
+   margin-right:1pc;
+   margin-bottom: 2pc;
+   background-color: white;
+   font-weight: lighter;
+   color: rgb(21, 21, 21);
+   padding:0.1pc 0.5pc 0.1pc 0.5pc;
+ }
+header button{
+  background-color: white;
+}
+h1{
+  font-weight:lighter;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ header{
+  position:relative;
+  top:-1.5pc;
+  
+ }
+
+p {
+  border-bottom-width:0.5pc;
+  border-bottom-color: rgba(128, 128, 128, 0.275);
+  border-bottom-style: solid;
+  border-radius: 50pc;
+  width:70pc;
+  margin-left: 5pc;
+  padding-top:1pc;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.items{
+  width:80pc;
+  border-radius:5pc;
+  margin-left:7.5pc;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
